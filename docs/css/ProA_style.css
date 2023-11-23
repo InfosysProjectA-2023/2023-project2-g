@@ -1,17 +1,16 @@
 /* ページ全体の背景色などを設定 */
 main {
-	background: url("http://www.netyasun.com/home/bk-img/b123.jpg");
+	background: #efffff;
 }
 
 /* ページの見出し領域の背景色，画像などを設定（id属性で設定） */
 /* 画像のファイルへのパスはこのCSSファイルのあるフォルダから見て，どこにあるかの相対パスとなる */
-.bg-head {
-	background: #deedff url(../photos/IMG_0522.jpg) repeat-x;
+#bg-head {
+	background: #deedff url(../photos/header_back_ground.jpg) repeat-x;
 }
-
 /* class属性で設定した領域で背景を青系（#99e0ff）にする */
 .bg-lightblue{
-	background: #a9e0ff;
+	background: #99e0ff;
 }
 
 .border-dashed{
@@ -35,3 +34,22 @@ main {
 	width: 340px;
 	height: 240px;
 }
+h1 {
+   padding: .5em .75em;
+  background-color: pink ;
+  border: 3px solid rgb(2, 22, 59);
+  border-radius: 20px;
+}
+
+h2 {
+  padding: 0.5em 0;
+  border-top: solid 3px red;
+  border-bottom: solid 3px red;
+}
+
+p{
+ border: 3px solid #5bb7ae;
+	border-radius: 20px 10px 40px 15px/50px 40px 10px 20px;
+  padding: 10px;
+}
+
