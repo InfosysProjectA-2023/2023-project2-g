@@ -11,9 +11,9 @@ window.onload = function onLoad() {
 			}
 		};
 
-		const json_url = "https://athena.abe-lab.jp/~hidenao/ProA_2023/Project1_example/data.json";
+		//const json_url = "https://athena.abe-lab.jp/~hidenao/ProA_2023/Project1_example/data.json";
 		// data.jsonでの動作が確認できたら，↑の行をコメント（//を先頭に付ける）して，↓の行のコメント//を外す
-		//const json_url = "https://infosysprojecta-2023/project1-2023-グループ記号/data.json";
+		const json_url = "https://infosysprojecta-2023/project1-2023-グループ記号/data.json";
 
 		var id = 0;
 		let obj_id = document.getElementById("obj_id"); //紹介対象idを表す<input type="hidden" id="obj_id" value="0">があったら
@@ -50,6 +50,8 @@ window.onload = function onLoad() {
 					let page_headline = document.getElementsByTagName("h2");
 					if(page_headline.length > 0){ //<h2>のタグがあったら(すべてのh2タグが変更されるので，必要に応じてidで区別する)
 						page_headline.item(0).innerText = obj.title;
+
+					//＃ここに新しく文を作る（文字列の変更についての記載）
 					}
 
 					//<img id="thumnail_img">タグのsrcの値をサムネイル画像のファイルに設定（photosフォルダに”画像名_thum.jpg”がある必要がある）
@@ -57,6 +59,7 @@ window.onload = function onLoad() {
 					if(thumnail_img != null){
 						thumnail_img.setAttribute("src","./photos/"+obj.image_file+"_thum.jpg");
 					}
+					//ここに新しくタグ付け（サムネイル画像）
 
 					let abstract_text = document.getElementById("abstract");
 					if(abstract_text != null){ //<p id="abstract"></p>のタグがあったら
