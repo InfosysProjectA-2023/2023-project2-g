@@ -1,10 +1,5 @@
 { "introduction_obj_list":
 [
-{ "title" : "子供と遊べる公園紹介",
-"image_file" : "IMG_0522",
-"abstract" : "茅ヶ崎市にある親子で遊ぶことができる公園紹介サイト",
-"detail" : "茅ヶ崎市は自然豊かでのどかな街です。<br />そんな茅ヶ崎市で親子で遊べる5つの公園を紹介します"
-},
 { "title" : "里山公園",
 "image_file" : "IMG_0464",
 "abstract" : "里山公園です。",
