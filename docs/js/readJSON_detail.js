@@ -1,4 +1,4 @@
-window.onload = function onLoad() {
+
 
 		//呼び出された際のURLパラメータの解析（.../detail1.html?id=1などのとき，変数名idの値(1)を取り出す）※テンプレートの時点では使っていない
 		const urlParam = function(name){
@@ -132,6 +132,6 @@ window.onload = function onLoad() {
 		}; //const fetch_json = async (url) => の終わり
 
 		fetch_json(json_url); //非同期処理を開始
-}
+
 
 
